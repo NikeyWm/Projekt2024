@@ -5,6 +5,5 @@ try {
     $pdo = new PDO($dns, 'root', '');
 } catch (PDOException $e) {
     die("Fehler bei der Verbindung zur Datenbank: " . $e->getMessage());
-    exit;
 }
 ?>
