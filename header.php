@@ -8,8 +8,8 @@
 </head>
 <body>
     <?php  
-    require_once('dbconnenction.php');
     session_start();
+    require_once('dbconnection.php');
     ?>
     <header>
         <div class="logo">
@@ -24,20 +24,17 @@
             </ul>
         </nav>
         <div class="dropdown">
-            <?php 
-                $loggedIn = isset($_SESSION['benutzer']); // Beispiel für eine Login-Überprüfung
-                $defaultOption = $loggedIn ? "Angemeldet" :"Anmelden";
-            ?>
-            <select>
-                <option selected disabled><?php echo $defaultOption; ?></option>
-                <?php if (!$loggedIn): ?>
-                    <option value="" disabled selected hidden>Konto</option>
-                    <option value="anmelden">Anmelden</option>
-                    <option value="registrieren">Registrieren</option>
-                <?php else: ?>
-                    <option value="abmelden">Abmelden</option>
-                <?php endif; ?>
-            </select>
+            
+        <select onchange="if (this.value) window.location.href=this.value;">
+    <option disabled selected>Konto</option>
+    <?php if (isset($_SESSION['benutzer'])): ?>
+        <option value="logout.php">Abmelden</option>
+    <?php else: ?>
+        <option value="login.php">Anmelden</option>
+        <option value="registrieren.php">Registrieren</option>
+    <?php endif; ?>
+</select>
+            
         </div>
     </header>
 </body>
