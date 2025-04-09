@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 if (isset($_POST['submit'])) {
     if (!empty($_POST['benutzername']) && !empty($_POST['pw']) && !empty($_POST['pwb'])) {
         $benutzername = htmlspecialchars($_POST['benutzername']);
@@ -55,12 +55,11 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="login.css">
     <title>Document</title>
 </head>
 <body>
     <?php include('header.php'); ?>
-    <h1>Registrieren</h1>
     <form action="<?php
     echo($_SERVER['SCRIPT_NAME']);
     ?>" method="post">
