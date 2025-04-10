@@ -22,7 +22,7 @@ h3 {
 }
 
 button {
-    background-color: #3498db;
+    background-color: #0a4aba;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -98,4 +98,23 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Easteregg */
+@keyframes rainbow {
+    0% { background-color: red; }
+    16% { background-color: orange; }
+    32% { background-color: yellow; }
+    48% { background-color: green; }
+    64% { background-color: blue; }
+    80% { background-color: indigo; }
+    100% { background-color: violet; }
+}
+
+.easteregg {
+    animation: rainbow 3s linear infinite !important;
+}
+
+.easteregg * {
+    transition: background-color 0.3s;
 }

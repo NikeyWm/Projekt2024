@@ -50,7 +50,7 @@ require_once('dbconnection.php');
             <div class="review">
                 <h4>Simon Morschig</h4>
                 <p>⭐⭐</p>
-                <p>Äußerst unsympathische App.</p>
+                <p>Eusterst unsümpatische App.</p>
             </div>
             <div class="review">
                 <h4>Alexandra Bugelnig</h4>
@@ -64,6 +64,29 @@ require_once('dbconnection.php');
             <p><a href="impressum.php">Impressum</a> | <a href="datenschutz.php">Datenschutz</a></p>
         </footer>
     </div>
+
+    <script>
+        let inputBuffer = "";
+
+        document.addEventListener("keydown", (e) => {
+            inputBuffer += e.key.toLowerCase();
+            inputBuffer = inputBuffer.slice(-3);
+
+            if (inputBuffer === "rgb") {
+                startRGBEffect();
+                inputBuffer = "";
+            }
+        });
+
+        function startRGBEffect() {
+            const bodyElement = document.querySelector('.bodyOhneHeader');
+            bodyElement.classList.add("easteregg");
+
+            setTimeout(() => {
+                bodyElement.classList.remove("easteregg");
+            }, 10000);
+        }
+    </script>
 
 </body>
 
