@@ -22,9 +22,9 @@
 </div>
         <nav>
             <ul>
-                <li><a href="#">Todo List</a></li>
-                <li><a href="#">Über uns</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="">Todo List</a></li>
+                <li><a href="datenschutz.php">Über uns</a></li>
+                <li><a href="datenschutz.php">Kontakt</a></li>
             </ul>
         </nav>
         <div class="dropdown">
