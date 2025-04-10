@@ -10,7 +10,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: linear-gradient(90deg, #4a90e2, #357ab8);
+    background: rgb(0,180,240);
+    background: linear-gradient(90deg, rgba(0,180,240,1) 0%, rgba(16,4,150,1) 87%, rgba(16,4,150,1) 100%);
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     position: sticky;
@@ -53,19 +54,24 @@ nav ul li a:hover {
     color: #aef3e8;
 }
 
-/* Dropdown-Styling */
+/* Dropdown-Styling */ 
 .dropdown select {
     padding: 8px 12px;
     border: none;
-    background: #4a90e2;
-    color: white;
+    background: rgba(16,4,150,1);
+    
+    color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 15px;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    
 }
 
-.dropdown select:hover {
-    background: #2f6ab7;
+
+
+.checkmate {
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
 }

@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
     <link rel="stylesheet" href="header.css">
+    
 </head>
 <body>
-    <?php  
+
+<?php  
     session_start();
     require_once('dbconnection.php');
     ?>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-            <span>CheckMate</span>
-        </div>
+    <div class="logo">
+    <a href="startseite.php">
+        <img src="logo.png" alt="Logo">
+    </a>
+    <span class="checkmate">CheckMate</span>
+</div>
         <nav>
             <ul>
                 <li><a href="#">Todo List</a></li>
@@ -36,6 +40,8 @@
 </select>
             
         </div>
-    </header>
+    </header> 
+    
+
 </body>
 </html>
