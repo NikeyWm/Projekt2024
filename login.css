@@ -22,7 +22,7 @@ label {
 
 input[type="text"],
 input[type="password"] {
-    width: 100%;
+    width: 94%;
     padding: 10px;
     margin-bottom: 18px;
     border: 1px solid #ccc;
@@ -40,7 +40,8 @@ input[type="password"]:focus {
 input[type="submit"] {
     width: 100%;
     padding: 12px;
-    background-color: #4a90e2;
+    background: rgb(0,180,240);
+    background: linear-gradient(90deg, rgba(0,180,240,1) 0%, rgba(16,4,150,1) 87%, rgba(16,4,150,1) 100%);
     color: white;
     font-size: 16px;
     border: none;
