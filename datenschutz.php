@@ -97,6 +97,8 @@ require_once('dbconnection.php');
             Österreich ist die Datenschutzbehörde zuständig.
         </p>
     </div>
+
+    <?php include('footer.php'); ?>
 </body>
 
 </html>

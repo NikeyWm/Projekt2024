@@ -25,5 +25,7 @@ require_once('dbconnection.php');
             E-Mail: <a href="checkmate.office@gmail.com">checkmate.office@gmail.com</a>
         </p>
     </div>
+
+    <?php include('footer.php'); ?>
 </body>
 </html>
