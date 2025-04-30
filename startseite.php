@@ -59,10 +59,7 @@ require_once('dbconnection.php');
             </div>
         </div>
 
-        <footer>
-            <p>&copy; 2024 CheckMate | Alle Rechte vorbehalten</p>
-            <p><a href="impressum.php">Impressum</a> | <a href="datenschutz.php">Datenschutz</a></p>
-        </footer>
+        <?php include('footer.php'); ?>
     </div>
 
     <script>
