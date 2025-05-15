@@ -7,7 +7,7 @@ require_once('dbconnection.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="startseite.css">
+        <link rel="stylesheet" href="startseite.css">
     <title>Startseite</title>
 </head>
 
@@ -27,7 +27,7 @@ require_once('dbconnection.php');
         <p>Kostenlos für immer</p>
 
         <div class="container">
-            <div class="review">
+            <div class="review"
                 <h4>Güllfred Buschl</h4>
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>Super App! Hat mir sehr geholfen.</p>
@@ -84,7 +84,7 @@ require_once('dbconnection.php');
             }, 10000);
         }
     </script>
-
+ 
 </body>
 
 </html>

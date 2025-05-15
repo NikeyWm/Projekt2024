@@ -8,6 +8,14 @@ require_once('dbconnection.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum</title>
 </head>
+<style>
+
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}   
+
+</style>
 <body>
     <?php include('header.php'); ?>
 

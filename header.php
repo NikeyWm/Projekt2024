@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
     <link rel="stylesheet" href="header.css">
+    <?php include 'darkmode.php'; ?>
     
 </head>
 <body>
@@ -24,7 +25,7 @@
             <ul>
                 <li><a href="">Todo List</a></li>
                 <li><a href="datenschutz.php">Über uns</a></li>
-                <li><a href="datenschutz.php">Kontakt</a></li>
+                <li><a href="impressum.php">Kontakt</a></li>
             </ul>
         </nav>
         <div class="dropdown">
@@ -41,7 +42,7 @@
             
         </div>
     </header> 
-    
+   
 
 </body>
 </html>

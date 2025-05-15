@@ -9,12 +9,18 @@ require_once('dbconnection.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutz</title>
     <style>
+        body.dark {
+            background-color: #121212;
+            color: #ffffff;
+        }
         .bodyOhneHeader {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
         }
-
+h2.dark {
+            color: #ffffff;
+        }
         h2 {
             color: #333;
         }
