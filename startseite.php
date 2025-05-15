@@ -84,7 +84,28 @@ require_once('dbconnection.php');
             }, 10000);
         }
     </script>
- 
+<button id="skibidiButton" style="display: none; position: fixed; bottom: 50px; right: 50px; padding: 20px; background-color: red; color: white; font-size: 20px; border: none; border-radius: 10px; z-index: 9999;">
+  Skibidi Time
+</button>
+<script>
+let typed = "";
+const secret = "skibidi";
+const button = document.getElementById("skibidiButton");
+
+// Zeige Knopf nach Tastenkombi
+document.addEventListener("keydown", function(e) {
+    typed += e.key.toLowerCase();
+    if (typed.length > secret.length) typed = typed.slice(-secret.length);
+    if (typed === secret) {
+        button.style.display = "block";
+    }
+});
+
+// Ändere Cursor bei Klick
+button.addEventListener("click", function() {
+    document.body.classList.add("cursor-skibidi");
+});
+</script>
 </body>
 
 </html>
