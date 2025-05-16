@@ -6,12 +6,14 @@
     <title>Header</title>
     <link rel="stylesheet" href="header.css">
     <?php include 'darkmode.php'; ?>
-    
+
 </head>
 <body>
 
 <?php  
+    if (session_status() === PHP_SESSION_NONE) {
     session_start();
+}
     require_once('dbconnection.php');
     ?>
     <header>

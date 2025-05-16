@@ -1,6 +1,8 @@
 <?php
 
-
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 if (isset($_POST['submit'])) {
     if (!empty($_POST['benutzername']) && !empty($_POST['pw'])) {
         $benutzername = htmlspecialchars($_POST['benutzername']);
@@ -15,9 +17,10 @@ if (isset($_POST['submit'])) {
             $stmt->execute();
 
             $benutzer = $stmt->fetch(PDO::FETCH_ASSOC);
-            if ($benutzer) {
+            if ($benutzername) {
                 if (password_verify($pw, $benutzer['pw'])) {
                     $_SESSION['benutzer'] = $benutzername;
+                    $_COOKIE['test'] = $benutzername;
                     header('Location: startseite.php');
                     exit();
                 } else {
