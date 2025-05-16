@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
             if ($benutzer) {
                 if (password_verify($pw, $benutzer['pw'])) {
                     $_SESSION['benutzer'] = $benutzername;
-                    header('Location: header.php');
+                    header('Location: startseite.php');
                     exit();
                 } else {
                     echo('Falsches Passwort');
