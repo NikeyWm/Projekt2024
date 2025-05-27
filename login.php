@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
             if ($benutzername) {
                 if (password_verify($pw, $benutzer['pw'])) {
                     $_SESSION['benutzer'] = $benutzername;
-                    $_COOKIE['test'] = $benutzername;
+                    $_SESSION['uid'] = $benutzer['uid'];
                     header('Location: startseite.php');
                     exit();
                 } else {

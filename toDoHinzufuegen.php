@@ -6,7 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 require_once('dbconnection.php');
 if (isset($_POST['submit'])) {
     $stmt = $pdo->prepare("SELECT uid FROM benutzer WHERE benutzername = ?");
-    $stmt->execute([$_SESSION['benutzername']]);
+    $stmt->execute([$_SESSION['benutzer']]);
     $benutzer = $stmt->fetch(PDO::FETCH_ASSOC);
     $uid = $benutzer['uid'];
 
