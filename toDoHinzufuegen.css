@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f7;
@@ -14,6 +13,7 @@ form {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  color: #333;
 }
 
 form h1 {
@@ -39,7 +39,9 @@ textarea {
   border-radius: 6px;
   box-sizing: border-box;
   font-size: 1rem;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+  background-color: #fff;
+  color: #333;
 }
 
 input[type="text"]:focus,
@@ -70,4 +72,48 @@ input[type="submit"]:hover {
     margin: 20px;
     padding: 20px;
   }
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #111;
+  color: #fefefe;
+}
+
+body.dark form {
+  background-color: #222;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  color: #ddd;
+}
+
+body.dark form h1 {
+  color: #a89bff;
+}
+
+body.dark label {
+  color: #ccc;
+}
+
+body.dark input[type="text"],
+body.dark input[type="date"],
+body.dark textarea {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #eee;
+}
+
+body.dark input[type="text"]:focus,
+body.dark input[type="date"]:focus,
+body.dark textarea:focus {
+  background-color: #444;
+  border-color: #a89bff;
+}
+
+body.dark input[type="submit"] {
+  background-color: #a89bff;
+  color: #111;
+}
+
+body.dark input[type="submit"]:hover {
+  background-color: #8c7dff;
 }

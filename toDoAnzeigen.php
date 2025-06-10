@@ -72,7 +72,7 @@ require_once('dbconnection.php');
                     <div class="card"
                         style="border: 1px solid #ccc; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                         <h3 class="card__title" style="margin: 0; font-size: 1.5em;">
-                            <?php echo htmlspecialchars($row['titel']); ?>
+                            <a class="toDoBearbeiten" href="toDoBearbeiten.php?tid=<?php echo $row['tid']; ?>" style="text-decoration: none;"><?php echo htmlspecialchars($row['titel']); ?></a>
                         </h3>
                         <p class="card__content" style="margin: 10px 0;"><?php echo htmlspecialchars($row['beschreibung']); ?>
                         </p>

@@ -15,8 +15,8 @@ if (isset($_POST['submit'])) {
     $datum = htmlspecialchars($_POST['datum']);
     $fertig = 0;
 
-    $stmt = $pdo->prepare("INSERT INTO aufgaben (uid, titel, beschreibung, datum, fertig) VALUES (?, ?, ?, ?, ?)");
-    $stmt->execute([$uid, $titel, $beschreibung, $datum, $fertig]);
+    $stmt = $pdo->prepare("INSERT INTO aufgaben (titel, beschreibung, datum, fertig) VALUES (?, ?, ?, ?)");
+    $stmt->execute([$titel, $beschreibung, $datum, $fertig]);
 
     header("Location: toDoAnzeigen.php");
     exit();
@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
 
             <div class="wrapper"></div>
             <label for="datum">Datum:</label>
-            <input type="date" name="datum" id="datum" autocomplete="off">
+            <input type="date" name="datum" id="datum" autocomplete="off" required>
 
             <input type="submit" name="submit" id="submit" value="ToDo hinzufügen">
         </form>

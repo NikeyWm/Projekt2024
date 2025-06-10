@@ -35,7 +35,11 @@
         <div class="dropdown">
 
             <select onchange="if (this.value) window.location.href=this.value;">
-                <option disabled selected>Konto</option>
+                <?php if (isset($_SESSION['benutzer'])): ?>
+                    <option disabled selected><?php echo ("$_SESSION[benutzer]") ?></option>
+                <?php else: ?>
+                    <option disabled selected>Konto</option>
+                <?php endif; ?>
                 <?php if (isset($_SESSION['benutzer'])): ?>
                     <option value="logout.php">Abmelden</option>
                 <?php else: ?>
