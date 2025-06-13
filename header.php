@@ -28,7 +28,7 @@
         <nav>
             <ul>
                 <li><a href="toDoAnzeigen.php?filter=offen">Todo List</a></li>
-                <li><a href="datenschutz.php">Über uns</a></li>
+                <li><a href="datenschutz.php">Datenschutz</a></li>
                 <li><a href="impressum.php">Kontakt</a></li>
             </ul>
         </nav>
